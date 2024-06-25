@@ -1,0 +1,8 @@
+[25-06-2024, 18:48:29]: Função cadastrar_usuario Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou None
+[25-06-2024, 18:49:17]: Função cadastrar_conta Executada com argumentos (1, [], []) e {}. Retornou False
+[25-06-2024, 18:49:30]: Função cadastrar_usuario Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou None
+[25-06-2024, 18:49:37]: Função cadastrar_conta Executada com argumentos (1, [<PessoaFisica: (123)], [ContaCorrente: ('0001', '1', '1')]) e {}. Retornou None
+[25-06-2024, 18:49:57]: Função depositar Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou True
+[25-06-2024, 18:50:10]: Função sacar Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou None
+[25-06-2024, 18:50:19]: Função exibir_extrato Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou None
+[25-06-2024, 18:53:43]: Função cadastrar_usuario Executada com argumentos ([<PessoaFisica: (123)],) e {}. Retornou None
