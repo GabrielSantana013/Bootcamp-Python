@@ -1,0 +1,75 @@
+Tipos de Banco de Dados:
+
+Relacionaos(SQL)
+Ñ Relacioanis (NOSQL)
+Orientado a Objetos
+Hierárquicos
+
+SGBD - Sistema de gerenciamento de banco de Dados
+
+Chave Primária - Identificadores Únicos dos registros das tabelas.
+Chave Estrangeira - Sinalizam que existe um relacionamento entre as informações da tabela.
+
+
+Introdução A SQL:
+
+Organização do SQL
+
+DQL - Linguagem de Consulta de Dados (select)
+DML - Linguagem de Manipulação de Dados (insert, update, delete)
+DDL - Linguagem de Definição de Dados (create, alter, drop)
+DCL- Linguagem de Controle de Dados (grant, revoke)
+DTL - Linguagem de Transação de Dados (begin, commit, rollback)
+
+Sintaxe Básica:
+
+Os nomes devem começar um letras ou com o caractere (_)
+Os nomes podem conter letras, numeros e (_)
+Sensibilidade a letras maiúsculas e minúsculas (case sensitive)
+
+MER e DER:
+
+MER (modelo de entidade-Relacionamento) é representado atraves de diagramas
+DER (diagramas de entidade-relacionamento) representa os MER
+
+Comando: CREATE TABLE
+
+CREATE TABLE {{nome}}
+
+    ({{coluna}} {{tipo}} {{opcoes}} COMMENT
+    {{commentario}});
+
+
+Tipos de dados:
+
+Inteiro - Integer
+Decimal/Numerico - Decimal/Numerico
+Caractere/Varchar - Character/Varchar
+Data/Hora - Date/Time
+Booleano - Boolean
+Texto longo - Text
+
+Opções:
+
+Restrições de Valor:
+    NOT NULL
+    UNIQUE
+    DEFAULT
+Chaves primarias e Estrangeiras
+Auto Incremento
+
+
+SELECT * FROM usuarios us
+INNER JOIN reservas rs ON us.id = rs.id_usuario
+INNER JOIN destinos ds ON rs.id_destino = ds.id
+
+FUNÇÕES AGREGADAS:
+
+COUNT (conta o num de registros), SUM(soma os valores de uma coluna numérica), 
+AVG(Calcula a Média dos valores de uma coluna), MIN(Retorna o valor mínimo de uma coluna),
+MAX(Retorna o valor máximo de uma coluna)
+
+SELECT MAX(TIMESTAMPDIFF(YEAR, data_nascimento, CURRENT_DATE())) AS maior_idade
+FROM usuarios
+
+
